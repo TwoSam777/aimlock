@@ -1,0 +1,46 @@
+{
+  "always_run_in_app" : true,
+  "icon" : {
+     "color" : "red",
+     "glyph" : "theater-masks"
+  },
+  "name" : "MENU SCRIP BY TCONG",
+  "script" : "async function argsPrompt(message, isSecure) {\n let prompt = new
+Alert();\n prompt.message = message;\n
+prompt.addTextField(isSecure ? \"\" : \"MENU SCRIP BY TCONG\", \"\");\n
+prompt.addAction(\"OK\");\n await prompt.presentAlert();\n return
+prompt.textFieldValue(0);\n}3\nwidget = new ListWidget();\nlet backgroundImage =
+await loadImage(\"https:\/\/i.imgur.com\/NY4fqCa.jpeg\");\nwidget.backgroundImage =
+backgroundImage;\nwidget.setPadding(0, 0, 0, 0);\n\ntitle = widget.addText(\"
+MENU SCRIP BY TCONG\");\ntitle.font = Font.boldSystemFont(17);\ntitle.textColor =
+Color.red();\n\nwidget.addSpacer();\n\nlet stack1 = widget.addStack();\
+nstack1.layoutHorizontally();\nstack1.addSpacer();\nlet mofscrButton =
+stack1.addText(\"     BYPASS    \");\nmofscrButton.textColor = Color.cyan();\
+nmofscrButton.url =
+\"scriptable:\/\/\/run\/filePicker?path=\/var\/mobile\/Library\/Plus\/
+YjAzNmYxYTZkYjdlYTY0OTFjNjMyZTgxNTQyNWE2MjJlNDE3MTg2OA%3D%3D.txt\";\n\nlet
+frigameButton = stack1.addText(\"        ANTIBAN    \");\nfrigameButton.textColor =
+Color.cyan();\nfrigameButton.url =
+\"scriptable:\/\/\/run\/filePicker?path=\/var\/mobile\/Library\/Plus\/
+YjAzNmYxYTZkYjdlYTY0OTFjNjMyZTgxNTQyNWE2MjJlNDE3MTg2OA%3D%3D.txt\";\n\n\
+nstack1.addSpacer();\n\nwidget.addSpacer();\n\nlet stack2 = widget.addStack();\
+nstack2.layoutHorizontally();\nstack2.addSpacer();\n\nlet powerxButton =
+stack2.addText(\"AJUSTE MIRA     \");\npowerxButton.textColor = Color.cyan();\
+npowerxButton.url =
+\"scriptable:\/\/\/run\/filePicker?path=\/var\/mobile\/Library\/Plus\/
+NTI2MzljMTg2NmViZTA1OGM2ODEyOTgwYzI2NjEwNTI1YWIxMmVkNjQwOGZhMzI3ZjgwNTg4OTZm%0D
+%0AN2Q0ODczYQ%3D%3D\";\n\nlet fixlagButton = stack2.addText(\"       AIMBOT    \");\
+nfixlagButton.textColor = Color.cyan();\nfixlagButton.url =
+\"scriptable:\/\/\/run\/filePicker?path=\/var\/mobile\/Library\/Plus\/
+YmVhZTE0ZDQ0MDBjNzM3MTAzYjgxZjU4YWU4YjFlNDc%3D.txt\";\n\nstack2.addSpacer();\n\
+nwidget.addSpacer();\n\nlet exitButton = widget.addText(\".       CLIQUE EM
+INSCREVA-SE CANAL DHZINXL YT\");\nexitButton.textColor = Color.red();\
+nexitButton.url = \"https:\/\/youtu.be\/XwWVBJGuaac?si=FVA0MHb4pn4Yl9h8\";\n\n\
+nexitButton.lineLimit = 1;\n\nwidget.presentMedium();\n\nScript.complete();\n\
+nasync function loadImage(url) {\n const request = new Request(url);\n return
+await request.loadImage();\n}",
+  "share_sheet_inputs" : [
+
+    ]
+}
+
